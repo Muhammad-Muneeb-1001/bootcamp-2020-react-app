@@ -15,6 +15,6 @@ jobs:
 
             - run: npm install -g surge
             - run: echo "Deploying website"
-            - run: surge ./ ${{ secrets.SECRET_TOKEN}} --token ${{ secrets.SECRET_TOKEN }} 
-          
+            - run: surge ./ http://example-react-application.surge.sh/ --token ${{ secrets.SECRET_TOKEN }} 
+                 
             - run: echo "Please visit => ${{ secrets.SECRET_TOKEN}}"
