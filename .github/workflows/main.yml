@@ -22,6 +22,6 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-             run: surge ./build http://sample-react-application.surge.sh/ --token${{secrets.SECRET_TOKEN}}
+        run: surge ./build http://sample-react-application.surge.sh/ --token${{secrets.SECRET_TOKEN}}
              
         
