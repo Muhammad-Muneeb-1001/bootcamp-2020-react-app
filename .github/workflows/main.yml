@@ -23,7 +23,5 @@ jobs:
       - name: Run surge
         run: surge ./ http://example-react-application.surge.sh/ --token ${{ secrets.SECRET_TOKEN }} 
                  
-        run: echo "Please visit => ${{ secrets.SECRET_TOKEN}}"
-
 
 
